@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Blinker', sans-serif;
+}
+
+.first{
+    position: relative;
+    background-image: url("first.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    opacity: 0.6;
+}
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background-color: bisque;
+}
+
+.sections > div{
+    margin: 3px;
+}
+
+.para{
+    padding: 70px;
+}
+
+.resize-img{
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+}
+
+.borders{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    color: white;
+    
+}
+
+.heading{    
+    padding: 20px;
+    background-color: black;
+}
+
+footer{
+    margin-top: 0;
+    padding: 20px;
+    color:white;
+    background-color: black;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .sections{
+        flex-direction: column;
+    }
+    
+.resize-img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    object-fit:cover;
+}
+.first{
+    background-attachment:scroll;
+    opacity: 0.6;
+}
+}
+
+@media screen and (max-width:753px) {   
+.para{
+    padding: 40px;
+}    
+}
